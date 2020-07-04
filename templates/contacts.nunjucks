@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Contacts</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contact-form-wrap">
+        <a class="redirect" href="/">GO TO MAIN PAGE</a>
+        <form id="contact-form" action="/api/contacts" method="POST">
+            <div class="contact-field">
+                <label for="name">Enter name:</label>
+                <input type="name" id="name">
+            </div>
+            <div class="contact-field">
+                <label for="surname">Enter surname:</label>
+                <input type="name" id="surname">
+            </div>
+            <div class="contact-field">
+                <label for="email">Enter email:</label>
+                <input type="email" id="email">
+            </div>
+             <div class="contact-field">
+                <label for="phone">Enter phone:</label>
+                <input placeholder="required field" type="number" id="phone">
+            </div>
+            <div class="contact-field">
+                <label for="position">Enter position:</label>
+                <input type="text" id="position">
+            </div> 
+            <div class="contact-field">
+                <label for="comment">Enter additional info:</label>
+                <input type="text" id="comment">
+            </div>
+            <div class="contact-field">
+                <label for="telegram">Enter Telegram:</label>
+                <input type="text" id="telegram">
+            </div> 
+            <div class="contact-field">
+                <label for="instagram">Enter instagram:</label>
+                <input type="text" id="instagram">
+            </div> 
+             <div class="add-btn">
+                <button type="submit">Add contact</button>
+            </div>
+        </form>
+    </div>
+    <div class="contacts-wrap">
+        <ul id="contacts">
+        </ul>
+    </div>
+    <script src='./assets/contacts.js'></script>
+</body>
+</html>

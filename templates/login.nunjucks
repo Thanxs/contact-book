@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <form class="login">
+            <div class="email">
+                <label for="email">Your email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="password">
+                <label for="password">Your password</label>
+                <input type="password" id="password">
+            </div>
+            <div class="login-btn">
+                <button type="submit">Login</button>
+            </div>        
+        </form>
+        <a href="/register" class="redirect">Go to Registration</a>
+        <script src="/assets/login.js"></script>
+    </body>
+</html>

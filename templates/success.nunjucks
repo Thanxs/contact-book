@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Success</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="success">
+        Congratulations! You are successfully registered!
+    </div>
+    <a class="redirect" href="/login">Go to Login</a>
+</body>
+</html>

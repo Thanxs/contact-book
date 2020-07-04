@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Main page</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+    <div class="wrap-inner">
+        <h1 class="title">Hello,
+                {% if user.email %}
+                    {{ user.email }}
+        <button id="logout">Logout</button>
+    </div>
+         <div class="contact-open">
+            <a href="/contacts">Open contact book</a>
+        </div>
+            {% else %}
+                dear guest.
+            {% endif %}
+        </h1>
+    </div>
+
+    <div class='pic'>
+        <img src="/assets/images/contact-book.png" alt="contact-book">
+    </div>
+    {% if not user.email %}
+        <a class="redirect" href="/login">Go to Login</a>
+    {% else %}
+        <script src="/assets/main.js"></script>
+    {% endif %}
+</body>
+</html>

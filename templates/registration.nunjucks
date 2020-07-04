@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="/assets/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form class="registration" action="/api/users/register" method="POST">
+            <div class="email">
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="password">
+                <label for="password">Your password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="register-btn">
+                <button type="submit">Register</button>
+            </div>        
+        </form>
+        <a href="/login" class="redirect">Go to Login</a>
+        <script src='./assets/register.js'></script>
+    </body>
+</html>
