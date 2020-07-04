@@ -12,10 +12,17 @@ nunjucks.configure(join(__dirname, "templates"), {
   watch: true,
 });
 
-mongoose.connect("mongodb://localhost:27017/contactbook", {
+const MongoDB_URL = 'mongodb+srv://Alex:Alex1990@clustercontactbook.y0plg.mongodb.net/contactbook?retryWrites=true&w=majority';
+// || 'mongodb://localhost:27017/contactbook'
+
+mongoose.connect(MongoDB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
+}).then(() => {
+  console.log("MongoDB error");  
+}).catch((err) => {
+  console.log(err);  
 });
 mongoose.set("debug", true);
 mongoose.connection.on("error", (e) => {
